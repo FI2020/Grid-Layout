@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <style>
+
+        * {
+            scroll-behavior: smooth; /* langsame drüber-hinweg-gleiten */
+        }
+        #first {
+            width: 100vW;
+            height: 100vH;
+            background-color: lightgrey;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows:  25% 25% 25% 25%;
+
+
+
+        }
+        #second {
+            width: 100vW;
+            height: 100vH;
+            background-color: lightgoldenrodyellow;
+        }
+
+        nav {
+            height: 50px;
+            width: 100vW;
+            position: fixed;
+        }
+        #fBox {
+            height: 80px;
+            width: 50vW;
+            background-color: fuchsia;
+
+        }
+        #sBox {
+
+            background-color: darkblue;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        #art1 {
+            grid-column: 3/4;
+            grid-row: 2/4;
+
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+<nav> <a href="#second">Zweite Seite</a></nav>
+<section id="first">
+    <article id="art1">
+        <h1>Das ist mein Artikel</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt lorem enim, eget fringilla turpis congue vitae. Phasellus aliquam nisi ut lorem vestibulum est. | Blindtext | Nulla ut arcu non nisi congue venenatis vitae ut ante. Nam iaculis sem nec ultrices dapibus. | Frank Kreif | Phasellus eu ultrices turpis. | Frank Rößler | Vivamus non mollis lacus, non ullamcorper nisl. | Referenzen | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sit amet scelerisque ipsum. | Kontakt | Morbi nulla dolor, adipiscing non convallis rhoncus, ornare sed risus. Sed adipiscing eget nibh at convallis. | Impressum | Curabitur eu gravida mauris, sit amet dictum metus. Sed a elementum arcu. Proin consectetur eros vitae odio sagittis, vitae dignissim justo sollicitudin. Phasellus non varius lacus, aliquet feugiat mauris. Phasellus fringilla commodo sem vel pellentesque. Ut porttitor tincidunt risus a pharetra. Cras nec vestibulum massa. Mauris sagittis leo a libero convallis accumsan. Aenean ut mollis ipsum. Donec aliquam egestas convallis. Fusce dapibus, neque sed mattis consectetur, erat nibh vulputate sapien, ac accumsan arcu sem quis nibh. Etiam et mi sed mauris commodo tristique. Proin mollis elementum purus, a porta quam vehicula et. Quisque ullamcorper, sapien ut egestas faucibus, tortor mauris tempor odio, sed pretium risus dui sit amet lectus. Sed ligula mi, tincidunt nec porttitor vel, aliquet sit amet libero. Nulla sagittis ultricies sem, non pretium augue bibendum vitae. Nunc luctus tristique urna eu tincidunt. Etiam ultricies neque ante, ut placerat dolor iaculis dapibus. Curabitur luctus orci et gravida laoreet. Sed ultrices id nulla id mollis. Donec tempor dapibus sem, a convallis felis elementum sed. Aenean nisi tortor, dictum ac massa non, rhoncus sagittis leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin id justo sit amet mi euismod lobortis. Morbi at mauris condimentum, vestibulum risus eu, laoreet elit. Aenean posuere risus vel hendrerit dignissim. In leo tellus, feugiat sit amet purus laoreet, consequat</p>
+    </article>
+
+
+
+
+</section>
+<section id="second"></section>
+
+
+</body>
+</html>
